@@ -1,0 +1,31 @@
+@import '../../css/base';
+
+.web-main{
+    .main-match{
+        width: $base-width;
+        min-width: $base-width;
+        height: 470px;
+        margin: 30px auto 0;
+
+        .match-ready-context{
+            width: 100%;
+            height: 450px;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #F2F4FB;
+            -moz-box-shadow: 10px 10px 5px rgba(102,102,102,0.35);
+            box-shadow: 1px 1px 5px rgba(102,102,102,0.35);
+            text-align: center;
+
+            .match-ready-title{
+                padding-top: 200px;
+                color: $base-color;
+                font-size: 16px;
+            }
+            .match-ready-leftbutton{
+                margin-top: 25px;
+                @include button-style-2(80px, 24px);
+            }
+        }
+    }
+}

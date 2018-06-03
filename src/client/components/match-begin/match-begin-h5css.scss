@@ -1,0 +1,69 @@
+@import '../../css/base';
+.m-body{
+    .match-begin-context{
+        justify-content: space-around;
+        width: 100%;
+        padding: pxrem(50px) 0;
+        background-color: #F2F4FB;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+
+        &:after{
+            content: "";
+        }
+
+        .match-begin-title{
+            height: 0;
+            @include font-dpr(16px);
+            color: rgba(0,0,0,0.6);
+            font-weight: bold;
+            text-align: center;
+        }
+        .match-begin-group{
+            width: 100%;
+            height: pxrem(160px);
+            @include flex-between(column);
+            align-items: center;
+
+            .match-begin-gender{
+    
+                div{
+                    margin: 0 pxrem(10px);
+                    display: inline-block;
+                    text-align: center;
+                    cursor: pointer;
+                    
+                    span{
+                        display: block;
+                        width: pxrem(66px);
+                        height: pxrem(66px);
+                        border-radius: 50%; 
+    
+                        img{
+                            padding: pxrem(8px);
+                            width: pxrem(50px);
+                            height: pxrem(50px);
+                        }
+                    }
+                    .gender-select{
+                        background-color: #c9c9c9;
+                    }
+                    p{
+                        padding-top: pxrem(10px);
+                        @include font-dpr(12px);
+                        color: #FF0F50;
+                    }
+                }
+
+            }
+            .match-begin-start{
+                @include button-style-1(pxrem(180px), pxrem(36px), pxrem(5px));
+
+                &:hover{
+                    background-color: $base-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,90 @@
+@import '../../css/base';
+
+.web-main{    
+    .media-context{
+        max-width: 309px;
+        display: inline-block;
+        border: 1px solid #E4E4E4;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: left;
+        word-wrap: break-word;
+
+        .media-text{
+            font-size: 12px;
+        }
+    }
+
+    .media-restartButton{
+        display: none;
+    }
+
+    .media-body-left{
+        padding: 10px 0;
+        text-align: left;
+
+        &:last-of-type{
+            margin-bottom: 25px;
+        }
+
+        .media-context{
+            background-color: #FFF;
+
+            .media-text{
+                color: #333;
+            }
+        }
+    }
+
+    .media-body-left-gray{
+        padding: 10px 0;
+        text-align: left;
+
+        &:last-of-type{
+            margin-bottom: 25px;
+        }
+
+        .media-context{
+            background-color: #CCC;
+
+            .media-text{
+                color: #333;
+            }
+        }
+    }
+
+    .media-body-right{
+        padding: 10px 0;
+        text-align: right;
+
+        &:last-of-type{
+            margin-bottom: 25px;
+        }
+
+        .media-context{
+            background-color: #FFF;
+
+            .media-text{
+                color: #333;
+            }
+        }
+    }
+
+    .media-body-center{
+        text-align: center;
+        padding: 0;
+
+        &:last-of-type{
+            margin-bottom: 25px;
+        }
+
+        .media-context{
+            background-color: transparent;
+            border: none;
+
+            .media-text{
+                color: #666;
+            }
+        }
+    }
+}

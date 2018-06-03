@@ -1,0 +1,101 @@
+@import '../../css/base';
+
+.m-body{
+    
+    .media-context{
+        max-width: pxrem(231.75px);
+        display: inline-block;
+        border: pxrem(1px) solid #E4E4E4;
+        padding: pxrem(10px);
+        border-radius: pxrem(5px);
+        text-align: left;
+        word-wrap: break-word;
+
+        .media-text{
+            @include font-dpr(14px);
+        }
+    }
+
+    .media-restartButton{
+        display: none;
+    }
+
+    .media-body-left{
+        padding: pxrem(10px) 0;
+        text-align: left;
+
+        &:last-of-type{
+            margin-bottom: pxrem(25px);
+        }
+
+        .media-context{
+            background-color: #FFF;
+
+            .media-text{
+                color: #333;
+            }
+        }
+    }
+
+    .media-body-left-gray{
+        padding: pxrem(10px) 0;
+        text-align: left;
+        display: flex;
+
+        &:last-of-type{
+            margin-bottom: pxrem(25px);
+        }
+
+        .media-context{
+            background-color: #CCC;
+            border: 0;
+
+            .media-text{
+                color: #333;
+                line-height: 100%;
+            }
+        }
+        .media-restartButton{
+            display: block;
+            @include font-dpr(14px);
+            margin-left: pxrem(10px);
+            @include button-style-1(pxrem(88px),auto, pxrem(5px));
+        }
+    }
+
+    .media-body-right{
+        padding: pxrem(10px) 0;
+        text-align: right;
+
+        &:last-of-type{
+            margin-bottom: pxrem(25px);
+        }
+
+        .media-context{
+            background-color: #FFF;
+
+            .media-text{
+                color: #333;
+            }
+        }
+    }
+
+    .media-body-center{
+        text-align: center;
+        padding: 0;
+
+        &:last-of-type{
+            margin-bottom: pxrem(25px);
+        }
+
+        .media-context{
+            background-color: transparent;
+            border: none;
+
+            .media-text{
+                color: #666;
+                @include font-dpr(12px);
+            }
+        }
+    }
+}

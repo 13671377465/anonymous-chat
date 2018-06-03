@@ -1,0 +1,33 @@
+@import '../../css/base';
+
+.m-body{
+    .match-ready-context{
+        justify-content: space-around;
+        width: 100%;
+        padding: pxrem(50px) 0;
+        background-color: #F2F4FB;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+
+        &:after{
+            content: "";
+        }
+
+        .match-ready-group{
+                    width: 100%;
+                    height: pxrem(160px);
+                    @include flex-between(column);
+                    align-items: center;
+
+                    .match-ready-title{
+                        padding-top: pxrem(60px);
+                        color: #FF0F50;
+                        @include font-dpr(16px);
+                    }
+                    .match-ready-leftbutton{
+                        @include button-style-2(pxrem(180px), pxrem(36px), pxrem(5px));
+                    }
+                }
+        }
+}

@@ -1,0 +1,87 @@
+.web-main .media-context {
+  max-width: 309px;
+  display: inline-block;
+  border: 1px solid #E4E4E4;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.web-main .media-context .media-text {
+  font-size: 12px;
+}
+
+.web-main .media-restartButton {
+  display: none;
+}
+
+.web-main .media-body-left {
+  padding: 10px 0;
+  text-align: left;
+}
+
+.web-main .media-body-left:last-of-type {
+  margin-bottom: 25px;
+}
+
+.web-main .media-body-left .media-context {
+  background-color: #FFF;
+}
+
+.web-main .media-body-left .media-context .media-text {
+  color: #333;
+}
+
+.web-main .media-body-left-gray {
+  padding: 10px 0;
+  text-align: left;
+}
+
+.web-main .media-body-left-gray:last-of-type {
+  margin-bottom: 25px;
+}
+
+.web-main .media-body-left-gray .media-context {
+  background-color: #CCC;
+}
+
+.web-main .media-body-left-gray .media-context .media-text {
+  color: #333;
+}
+
+.web-main .media-body-right {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.web-main .media-body-right:last-of-type {
+  margin-bottom: 25px;
+}
+
+.web-main .media-body-right .media-context {
+  background-color: #FFF;
+}
+
+.web-main .media-body-right .media-context .media-text {
+  color: #333;
+}
+
+.web-main .media-body-center {
+  text-align: center;
+  padding: 0;
+}
+
+.web-main .media-body-center:last-of-type {
+  margin-bottom: 25px;
+}
+
+.web-main .media-body-center .media-context {
+  background-color: transparent;
+  border: none;
+}
+
+.web-main .media-body-center .media-context .media-text {
+  color: #666;
+}
+/*# sourceMappingURL=media-webcss.css.map */
